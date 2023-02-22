@@ -2,6 +2,8 @@ const prompt = require("prompt-sync")();
 let Fseat = parseInt();
  let  seatNo = parseInt(prompt("Enter Seat Number: "));
 
+if(seatNo<=180)
+{
     if((seatNo % 12) === 1 || (seatNo % 12) === 0)
     {
         if((seatNo % 12) === 0)
@@ -77,3 +79,8 @@ let Fseat = parseInt();
             console.log("AS",Fseat);
         }
     }
+
+}
+else {
+    console.log("Seat Not Available! Please Enter Valid Seat Number")
+}
